@@ -59,13 +59,13 @@ export function Summary() {
       </div>
       <Separator />
       <PendingGoals />
+      <h2 className="text-xl font-medium">Sua semana</h2>
       {Object.entries(data.goalsPerDay).map(([date, goals]) => {
         //aqui ele vai criar um desses a cada objeto do banco, essa date é a data que ta la no bd para metas do dia e o goals e o array de metas
         const weekDay = dayjs(date).format('dddd')
         const formattedDate = dayjs(date).format('DD [de] MMMM')
         return (
           <div key={date} className="flex flex-col gap-6">
-            <h2 className="text-xl font-medium">Sua semana</h2>
             <div className="flex flex-col gap-4">
               <h3 className="font-medium ">
                 <span className="capitalize">{weekDay}</span>{' '}
