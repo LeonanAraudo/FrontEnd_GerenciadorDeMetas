@@ -7,7 +7,7 @@ import { Separator } from './separator'
 import { getSummary } from '../../http/get-summary'
 import { useQuery } from '@tanstack/react-query'
 import dayjs from 'dayjs'
-import ptBr from 'dayjs/locale/pt-BR'
+import ptBr from 'dayjs/locale/pt-br'
 import { PendingGoals } from './pending-goals'
 
 dayjs.locale(ptBr)
