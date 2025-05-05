@@ -5,7 +5,7 @@ type PendingGoalsResponse = {
   completionCount: number
 }
 export async function getPendingGoals(): Promise<PendingGoalsResponse> {
-  const response = await fetch('http://localhost:3333/pendding-goals')
+  const response = await fetch('https://backend-gerenciadordemetas.onrender.com/pendding-goals')
   const data = await response.json()
   return data.penddingGoals
 }
