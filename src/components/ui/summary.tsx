@@ -15,9 +15,10 @@ dayjs.locale(ptBr)
 export function Summary() {
   const { data } = useQuery({
     queryKey: ['summary'],
-    queryFn: getSummary, //Qual função vou executar para trazer os dados
-    staleTime: 1000 * 60, //Cria um cash com os dados, a pesquisa dos dados será feita a cada tempo selecionado
+    queryFn: getSummary,
+    staleTime: 1000 * 60,
   })
+
   if (!data) {
     return null
   }
@@ -28,7 +29,7 @@ export function Summary() {
   const completedPercentage = Math.round((data.completed * 100) / data.total)
 
   return (
-    <div className="py-10 max-w-[480px] px-5 mx-auto  flex flex-col gap-6">
+    <div className="py-10 max-w-[480px] px-5 mx-auto flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-6">
           <InOrbitIcon />
@@ -43,7 +44,8 @@ export function Summary() {
           </Button>
         </DialogTrigger>
       </div>
-      <div className="flex  flex-col gap-3">
+
+      <div className="flex flex-col gap-3">
         <Progress value={8} max={15}>
           <ProgressIndicator style={{ width: `${completedPercentage}%` }} />
         </Progress>
@@ -57,17 +59,20 @@ export function Summary() {
           <span>{completedPercentage}%</span>
         </div>
       </div>
+
       <Separator />
       <PendingGoals />
+
       <h2 className="text-xl font-medium">Sua semana</h2>
-      {Object.entries(data.goalsPerDay).map(([date, goals]) => {
-        //aqui ele vai criar um desses a cada objeto do banco, essa date é a data que ta la no bd para metas do dia e o goals e o array de metas
+
+      {Object.entries(data.goalsPerDay ?? {}).map(([date, goals]) => {
         const weekDay = dayjs(date).format('dddd')
         const formattedDate = dayjs(date).format('DD [de] MMMM')
+
         return (
           <div key={date} className="flex flex-col gap-6">
             <div className="flex flex-col gap-4">
-              <h3 className="font-medium ">
+              <h3 className="font-medium">
                 <span className="capitalize">{weekDay}</span>{' '}
                 <span className="text-zinc-400 text-xs">({formattedDate})</span>
               </h3>
