@@ -1,12 +1,10 @@
 # 🌌 in.orbit – Gerenciador de Metas
 
 Este é o front-end do projeto **in.orbit**, uma aplicação moderna para gerenciamento de metas, construída com foco em performance, organização e escalabilidade.
-## ⚙️ Como rodar o projeto
-
+🔗 Acesse a aplicação: [in.orbit - Vercel](https://inorbit-leoproject.vercel.app/)
+## ⚙️ Como rodar o projeto na sua maquina
+Após clonar o repositório, siga os passos abaixo:
 ### 1. Instale as dependências
-
-Use o gerenciador de pacotes de sua preferência:
-
 ```bash
 npm install
 # ou
@@ -42,7 +40,10 @@ O projeto será iniciado em: http://localhost:5173
 - **TypeScript** – Garante tipagem estática e maior organização no código.  
 ![image](https://github.com/user-attachments/assets/f857ddd1-4446-4e25-a5ce-0c2b14dff6b9)
 
-<h2>O back-end do projeto está disponivel no link a seguir</h2>
-https://github.com/LeonanAraudo/BackEnd_GerenciadorDeMetas
-<br>
-<br>
+## 🔗 Back-end do projeto
+👉 https://github.com/LeonanAraudo/BackEnd_GerenciadorDeMetas
+
+
+
+    
+
