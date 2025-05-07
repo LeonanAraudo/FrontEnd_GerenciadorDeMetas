@@ -1,6 +1,8 @@
 # 🌌 in.orbit – Gerenciador de Metas
 
 Este é o front-end do projeto **in.orbit**, uma aplicação moderna para gerenciamento de metas, construída com foco em performance, organização e escalabilidade.
+
+
 🔗 Acesse a aplicação: [in.orbit - Vercel](https://inorbit-leoproject.vercel.app/)
 ## ⚙️ Como rodar o projeto na sua maquina
 Após clonar o repositório, siga os passos abaixo:
