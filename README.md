@@ -5,14 +5,17 @@ Este é o front-end do projeto **in.orbit**, uma aplicação moderna para gerenc
 
 🔗 Acesse a aplicação: [in.orbit - Vercel](https://inorbit-leoproject.vercel.app/)
 ## ⚙️ Como rodar o projeto na sua maquina
-Após clonar o repositório, siga os passos abaixo:
-### 1. Instale as dependências
+### 1. Clone o repositório
+```bash
+git clone https://github.com/LeonanAraudo/FrontEnd_GerenciadorDeMetas
+```
+### 2. Instale as dependências
 ```bash
 npm install
 # ou
 yarn
 ```
-### 2. Inicie o servidor de desenvolvimento
+### 3. Inicie o servidor de desenvolvimento
 ```bash
 npm run dev
 # ou
